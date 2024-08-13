@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    .input-field{
+      /* border: 1px solid; */
+      width: max-content;
+    }
+  </style>
+</head>
+<body>
+  <h3>Walmart SpaceView</h3>
+  <p>Drag and drop images from any webpage.</p>
+  <div class="input-field">
+    <input type="text" id="imageUrlInput" >
+  </div>
+  <button id="view">view</button>
+  <img id="image" src="" height="50" width="50">
+  <script src="background.js"></script>
+  <input type="hidden" name="imageURL" id="imageURL" value="">
+  <button id="gotourl">Go to SpaceView</button>
+</body>
+</html>

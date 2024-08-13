@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Drag and Drop Image",
+    "version": "1.0",
+    "description": "Allows users to drag and drop images from a webpage.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+      
+      }
+    }
+  
+  

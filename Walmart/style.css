@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 10px;
+    text-align: center;
+    background-color: #0f77f5;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: max-content; */
+}
+
+/* input[type="file"] {
+    margin-bottom: 10px;
+
+} */
+input::file-selector-button{
+    background-color: #0f77f5;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.room {
+    width: 60vw;
+    height: 60vh;
+    border: 2px solid #ccc;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.resizable {
+    position: absolute;
+    cursor: grab;
+    display: inline-block;
+}
+
+.resizer {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 10;
+}
+
+.resizer.top-left {
+    top: -5px;
+    left: -5px;
+    cursor: nwse-resize;
+    display: none;
+}
+
+.resizer.top-right {
+    display: none;
+    top: -5px;
+    right: -5px;
+    cursor: nesw-resize;
+}
+
+.resizer.bottom-left {
+    display: none;
+    bottom: -5px;
+    left: -5px;
+    cursor: nesw-resize;
+}
+
+.resizer.bottom-right {
+    bottom: -5px;
+    right: -5px;
+    cursor: nwse-resize;
+}
+
+.table {
+    display: block;
+    max-width: 150%;
+    max-height: 150%;
+    mix-blend-mode: multiply;
+}
+.inputs{
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}

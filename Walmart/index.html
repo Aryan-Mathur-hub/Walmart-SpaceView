@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Objects in Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Walmart SpaceView</h1>
+    </header><br><br>
+    <div class="container">
+        <div class="inputs">
+            <div class="bgimg">
+                <label for="">Background: </label>
+                <input type="file" id="bgUpload" accept="image/*">
+            </div>
+            <div class="objimg">
+                <label for="">Object: </label>
+                <input type="hidden" value="" id="imgcpy">
+                <img src="" id="objimage" height="100">
+            </div>   
+        </div>
+        <div id="room" class="room"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
