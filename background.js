@@ -2,8 +2,13 @@ document.addEventListener("DOMContentLoaded", function() {
     function handleChange() {
         console.log("text received", document.getElementById("imageUrlInput").value);
         const url = document.getElementById("imageUrlInput").value;
-        document.getElementById("image").setAttribute("src", url);
         document.getElementById("imageURL").setAttribute("value", url);
+        const imgpreview = document.createElement("img")
+        imgpreview.src = url;
+        imgpreview.height = 50
+        imgpreview.width = 50
+        imgpreview.id = "image"
+        document.getElementById("imgpreview-container").appendChild(imgpreview)
     }
 
     document.getElementById("imageUrlInput").onchange = handleChange;

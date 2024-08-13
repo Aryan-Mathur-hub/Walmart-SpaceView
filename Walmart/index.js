@@ -19,17 +19,6 @@ document.getElementById('objimage').addEventListener('click', function(event) {
     const tableContainer = createResizableImage(imageUrl);
     tableContainer.setAttribute("draggable", "true")
     room.appendChild(tableContainer);
-
-
-    // for (const file of files) {
-    //     const reader = new FileReader();
-
-    //     reader.onload = function(e) {
-            
-    //     };
-
-    //     reader.readAsDataURL(file);
-    // }
 });
 
 function createResizableImage(imageUrl) {
@@ -40,8 +29,8 @@ function createResizableImage(imageUrl) {
     table.src = imageUrl;
     table.classList.add('table');
     table.draggable = true;
-    table.style.minHeight=200;
-    table.style.minWidth=200;
+    table.height=300;
+    table.width=300;
     const resizers = ['top-left', 'top-right', 'bottom-left', 'bottom-right'];
     resizers.forEach(position => {
         const resizer = document.createElement('div');
