@@ -61,7 +61,7 @@ input::file-selector-button:hover {
 }
 
 .room {
-    width: 80vw;
+    width: 80%;
     height: 60vh;
     border: 2px solid #ccc;
     position: relative;
@@ -124,7 +124,7 @@ input::file-selector-button:hover {
 }
 
 .inputs {
-    width: 80vw;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;

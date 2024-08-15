@@ -29,8 +29,8 @@ function createResizableImage(imageUrl) {
     table.src = imageUrl;
     table.classList.add('table');
     table.draggable = true;
-    table.height=500;
-    table.width=500;
+    table.height=400;
+    table.width=400;
     const resizers = ['top-left', 'top-right', 'bottom-left', 'bottom-right'];
     resizers.forEach(position => {
         const resizer = document.createElement('div');
